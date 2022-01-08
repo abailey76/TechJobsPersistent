@@ -58,7 +58,7 @@ namespace TechJobsPersistent.Controllers
                         JobId = newJob.Id,
                         Job = newJob,
                         SkillId = int.Parse(item),
-                        Skill = context.Skills.Find(int.Parse(item)) //Do I need this?
+                        Skill = context.Skills.Find(int.Parse(item))
                     };
                     context.JobSkills.Add(newJobSkill);
                 }

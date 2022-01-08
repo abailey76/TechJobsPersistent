@@ -4,6 +4,7 @@
 <h1>Add a Job</h1>
 
 <form asp-controller="Home" asp-action="ProcessAddJobForm" method="post">
+
     <div class="form-group">
         <label asp-for="Name"></label>
         <input class="form-control" asp-for="Name" />
@@ -26,6 +27,7 @@
             <label class="form-check-label" for="@skill.Id">@skill.Name</label>
         }
     </div>
+
     <div>
         <input type="submit" value="Add Job" />
         <a asp-controller="Skill" asp-action="Add">Add Skill</a>
